@@ -12,3 +12,13 @@
     color: white;
 }
 
+.current-info {
+    display: flexbox;
+    padding: 70px;
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.container {
+    border: blue 4px solid ;
+}
