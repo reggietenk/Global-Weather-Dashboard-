@@ -20,13 +20,14 @@
             <div class="card">
                 <h3 class="card-header text-uppercase">Search for a city:</h3>
                 <form id="user-form" class="card-body">
-                  <input name="username" id="username" type="text" autofocus="true" class="city-input input-group" placeholder="City Name"/> <br>
+                  <input name="username" id="city" type="text" autofocus="true" class="city-input input-group" placeholder="City Name"/> <br>
                   <div class="d-grid">
                   <button type="submit" class="button btn-primary">Search</button>
                   </div>
                 </form>
-              </div>
-        </div>
+             </div>
+
+             <div class="search-history"></div>
     </main>   
 
    
@@ -34,78 +35,86 @@
 <!-- city weather/date info display  -->
         <section class="container col-12 col-md-9 py-3 ">
             <div class="row">
-                <div class="current-info card-body">
-                    <h1 class="city-search">New York</h1>
-                    <p class="date">1/8/21</p>
+                <div class="city-info card-body">
+                    <h1 class="searched-city">New York</h1>
+                    <p class="date">1/9/21</p>
                     <p class="weather-icon"></p>
-                    <p class="temp">Temp:74.8</p>
+                    <p class="temp">Temp:32.6</p>
                     <p class="wind">Wind:6.67</p>
-                    <p class="humidity">Humidity:46%</p>
+                    <p class="humidity">Humidity:32%</p>
                     <p class="uv-index">UV Index 0.47</p>
                 </div>
             </div>             <!-- five day forecast section -->
             <div class="col-12 col-md-9">
                 
                 <h3 class="fiveday-forecast">5 Day Forecast</h3>
-                <div class="row row-cols-1 row-cols-md-5 g-6">
-                   
+                <div class="row row-cols-1 row-cols-md-5 g-6 space-between">
+                   <!-- card day 1 -->
                     <div class="col">
                       <div class="card">
                         <div class="card-body">
                           <p class="date">1/9/21</p>
                           <p class="weather-icon"></p>
-                          <p class="temp">47</p>
-                          <p class="wind">9.53</p>
-                          <p class="humidity">87%</p>
+                          <p class="temp">43</p>
+                          <p class="wind">3.67</p>
+                          <p class="humidity">36%</p>
                         </div>
                       </div>
                     </div>
+
+                    <!-- card day 2 -->
                     <div class="col">
                         <div class="card">
                           <div class="card-body">
-                            <p class="date">1/9/21</p>
+                            <p class="date">1/10/21</p>
                             <p class="weather-icon"></p>
-                            <p class="temp">47</p>
-                            <p class="wind">9.53</p>
-                            <p class="humidity">87%</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <div class="card-body">
-                            <p class="date">1/9/21</p>
-                            <p class="weather-icon"></p>
-                            <p class="temp">47</p>
-                            <p class="wind">9.53</p>
-                            <p class="humidity">87%</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <div class="card-body">
-                            <p class="date">1/9/21</p>
-                            <p class="weather-icon"></p>
-                            <p class="temp">47</p>
-                            <p class="wind">9.53</p>
-                            <p class="humidity">87%</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <div class="card-body">
-                            <p class="date">1/9/21</p>
-                            <p class="weather-icon"></p>
-                            <p class="temp">47</p>
-                            <p class="wind">9.53</p>
-                            <p class="humidity">87%</p>
+                            <p class="temp">Temp:39</p>
+                            <p class="wind">Wind:9.53</p>
+                            <p class="humidity">Humidity:34%</p>
                           </div>
                         </div>
                       </div>
 
-            
+                    <!-- card day 3 -->
+                    <div class="col">
+                        <div class="card-md">
+                          <div class="card-body">
+                            <p class="date">1/11/21</p>
+                            <p class="weather-icon"></p>
+                            <p class="temp">27</p>
+                            <p class="wind">9.53</p>
+                            <p class="humidity">19%</p>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- card day 4 -->
+                    <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="date">1/12/21</p>
+                            <p class="weather-icon"></p>
+                            <p class="temp">12</p>
+                            <p class="wind">9.53</p>
+                            <p class="humidity">12%</p>
+                          </div>
+                        </div>
+                    </div>
+                      
+                    <!-- card day 5 -->
+                    <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="date">1/13/21</p>
+                            <p class="weather-icon"></p>
+                            <p class="temp">32</p>
+                            <p class="wind">9.53</p>
+                            <p class="humidity">21%</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                      
 
             </div>
         </section>
