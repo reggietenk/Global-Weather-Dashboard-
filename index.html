@@ -19,15 +19,20 @@
         <div class="d-flex align-items-start flex-column bd-highlight mb-3">
             <div class="card">
                 <h3 class="card-header text-uppercase">Search for a city:</h3>
-                <form id="user-form" class="card-body">
-                  <input name="username" id="city" type="text" autofocus="true" class="city-input input-group" placeholder="City Name"/> <br>
+                <form id="city-form" class="card-body">
+                  <input name="" id="city-name" type="text" autofocus="true" class="city-input input-group" placeholder="City Name"/> <br>
                   <div class="d-grid">
-                  <button type="submit" class="button btn-primary">Search</button>
+                  <button type="submit" class="button btn-primary" id="search-button">Search</button>
                   </div>
                 </form>
              </div>
 
-             <div class="search-history"></div>
+             <div class="col-12 col-md-8" id="search-history">
+               <h3 class="sub-city">Searched Cites: <span id="city-search-term"></span></h3>
+               <div id="searched-container" class="list-city">
+
+               </div>
+             </div>
     </main>   
 
    
@@ -47,10 +52,10 @@
             </div>             <!-- five day forecast section -->
             <div class="col-12 col-md-9">
                 
-                <h3 class="fiveday-forecast">5 Day Forecast</h3>
+                <h3 class="fiveday">5 Day Forecast</h3>
                 <div class="row row-cols-1 row-cols-md-5 g-6 space-between">
                    <!-- card day 1 -->
-                    <div class="col">
+                    <div class="fiveday-forecast col">
                       <div class="card">
                         <div class="card-body">
                           <p class="date">1/9/21</p>
@@ -63,21 +68,21 @@
                     </div>
 
                     <!-- card day 2 -->
-                    <div class="col">
+                    <div class="fiveday-forecast col">
                         <div class="card">
                           <div class="card-body">
                             <p class="date">1/10/21</p>
                             <p class="weather-icon"></p>
-                            <p class="temp">Temp:39</p>
-                            <p class="wind">Wind:9.53</p>
-                            <p class="humidity">Humidity:34%</p>
+                            <p class="temp">39</p>
+                            <p class="wind">9.53</p>
+                            <p class="humidity">34%</p>
                           </div>
                         </div>
                       </div>
 
                     <!-- card day 3 -->
-                    <div class="col">
-                        <div class="card-md">
+                    <div class="fiveday-forecast col">
+                        <div class="card">
                           <div class="card-body">
                             <p class="date">1/11/21</p>
                             <p class="weather-icon"></p>
@@ -89,7 +94,7 @@
                     </div>
 
                     <!-- card day 4 -->
-                    <div class="col">
+                    <div class="fiveday-forecast col">
                         <div class="card">
                           <div class="card-body">
                             <p class="date">1/12/21</p>
@@ -102,7 +107,7 @@
                     </div>
                       
                     <!-- card day 5 -->
-                    <div class="col">
+                    <div class="fiveday-forecast col">
                         <div class="card">
                           <div class="card-body">
                             <p class="date">1/13/21</p>
@@ -138,9 +143,8 @@
 
 
     </main>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 </body>
 </html>
